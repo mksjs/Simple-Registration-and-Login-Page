@@ -1,5 +1,5 @@
 var app =angular.module("myApp",['ngRoute']);
-app.config(function($routeProvider)){
+app.config(function($routeProvider){
     $routeProvider
     .when('/',{
         templateUrl: 'login.html'
@@ -9,5 +9,9 @@ app.config(function($routeProvider)){
     })
     .otherwise({
         redirectTo:'/'
-    })
-}
+    });
+});
+
+app.controller('loginCtrl',function($scope){
+    
+})
