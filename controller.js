@@ -13,5 +13,7 @@ app.config(function($routeProvider){
 });
 
 app.controller('loginCtrl',function($scope){
-    
+    $scope.submit = function(){
+        
+    }
 })
