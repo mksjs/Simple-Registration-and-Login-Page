@@ -12,7 +12,7 @@ controller('LoginController', function($scope, $rootScope, $stateParams, $state,
         $scope.password = '';
         $state.transitionTo('home');
     } else {
-    $scope.error = "Incorrect username/password !";
+        $scope.error = "Incorrect username/password !";
     }   
     };    
 });
