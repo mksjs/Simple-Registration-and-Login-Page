@@ -1,6 +1,8 @@
 // homeController.js
-var app = angular.module('myApp');
-app.controller('HomeController', 
+// var app = 
+// app.
+angular.module('myApp').
+controller('HomeController', 
 function($scope, $rootScope) {
 $scope.user = $rootScope.userName;
 });
