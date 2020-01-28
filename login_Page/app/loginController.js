@@ -1,6 +1,8 @@
 //loginController-js 
-var app = angular.module('myApp');
-app.controller('LoginController', function($scope, $rootScope, $stateParams, $state, LoginService) {
+//var app = 
+// app.
+angular.module('myApp').
+controller('LoginController', function($scope, $rootScope, $stateParams, $state, LoginService) {
 $rootScope.title = "AngularJS Login Page";
 $scope.formSubmit = function() {
 if(LoginService.login($scope.username, $scope.password)) {
