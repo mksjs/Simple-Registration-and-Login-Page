@@ -5,21 +5,21 @@
     console.clear();
     console.log('running');
     if(!LoginService.isAuthenticated()) {
-    $state.transitionTo('login');
+        $state.transitionTo('login');
     }
     });
     app.config(['$stateProvider', '$urlRouterProvider', 
     function($stateProvider, $urlRouterProvider) {
         $stateProvider
         .state('login', {
-        url : '/login',
-        templateUrl : 'login.html',
-        controller : 'LoginController'
+            url : '/login',
+            templateUrl : 'login.html',
+            controller : 'LoginController'
         })
         .state('home', {
-        url : '/home',
-        templateUrl : 'home.html',
-        controller : 'HomeController'
+            url : '/home',
+            templateUrl : 'home.html',
+            controller : 'HomeController'
         });
         $urlRouterProvider.otherwise('/login');
         }]);
