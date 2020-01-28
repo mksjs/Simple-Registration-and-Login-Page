@@ -1,6 +1,8 @@
 //loginService.js
-var app = angular.module('myApp');
-app.factory('LoginService', function() {
+//var app = 
+// app.
+angular.module('myApp').
+factory('LoginService', function() {
 var admin = 'myanatomy';
 var pass = 'myanatomy';
 var isAuthenticated = false;
