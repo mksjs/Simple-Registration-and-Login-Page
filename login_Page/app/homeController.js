@@ -4,5 +4,5 @@
 angular.module('myApp').
 controller('HomeController', 
 function($scope, $rootScope) {
-$scope.user = $rootScope.userName;
+    $scope.user = $rootScope.userName;
 });
